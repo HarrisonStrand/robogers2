@@ -20,9 +20,8 @@ function beepBoop(number1) {
       return number2;
     };
   });
-  console.log(newArray.join(", "));
   // this will return the new array with ", " in between each "character"//
-  return newArray.join(", ");
+  return (newArray.join(", "));
 }
 
 $(document).ready(function() {
@@ -32,7 +31,7 @@ $(document).ready(function() {
     let num1 = $("input#number").val();
     //creates new variable based on the beepBoop function with num1/user input as the input//
     let enterNumber = beepBoop(num1);
-    console.log(enterNumber);
+    $("ul#resultprint").append(enterNumber);
   });
 });
 
@@ -49,4 +48,4 @@ really helpful, as well as the character split. My big ah-ha moment was realizin
 business logic are essentially theoretical place holders and declaring your variable as an input in your
 user interface logic (line 34) is how you run your input through your previous function to get an output.
 I'm sure there are a million other ways to do this problem, I looked up solves for fizzbuzz and there are a
-ton of different options. Glad this one worked out, I'll be keeping this file for my notes in the future.
+ton of different options. Glad this one worked out, I'll be keeping this file for my notes in the future.*/
