@@ -14,7 +14,7 @@
 #### View Online
 * visit: 
 #### Open Locally
-1. Navigate to https://github.com/HarrisonStrand/robogers.git 
+1. Navigate to https://github.com/HarrisonStrand/robogers2.git 
 2. Click on the green 'Code' button and copy the repository HTTPS URL
 3. (a) Open your machine terminal and type in the command 'git clone 
 https://github.com/HarrisonStrand/robogers.git' in the directory you would like to clone the repository.
@@ -29,33 +29,38 @@ https://github.com/HarrisonStrand/robogers.git' in the directory you would like 
 
 ##Specs:
 
-Test: "It will convert user's input from a string to a number."
-Expect: (robogers("10")).toEqual(10);
+Description: beepBoop();
 
-Test: "It will alert a message if 0 is entered."
-Expect: (robogers("0")).toEqual("Enter a number higher than 0!!!");
+Test: "It will create a new list of numbers from 1 to the user's input of a number"
+Expect: (5).toEqual (1, 2, 3, 4, 5,);
 
-Test: "It will return a range of numbers from 0 to the user's input number."
-Expect: (robogers("5")).toEqual(0, 1, 2, 3, 4, 5);
+Test: "It will create a new string based on the previous array"
+Expect: (1, 2, 3, 4, 5).toEqual ("12345");
 
-Test: "It will create a new array with a range of numbers based on user input."
-Expect: (robogers("5")).toEqual([0, 1, 2, 3, 4, 5]);
+Test: "It will split the new string based on numbers in the array"
+Expect: ("12345").toEqual ("1" "2" "3" "4" "5");
 
-Test: "It will convert any numbers containing a 1 in the results to be replaced with "Beep!"."
-Expect: (robogers("5")).toEqual(0, "Beep", 2, 3, 4, 5);
+Test: "It will replace each string that includes "3" with "WYBMN?"
+Expect: ("1" "2" "3" "4" "5").toEqual ("1" "2" "WYBMN?" "4" "5");
 
-Test: "It will convert any numbers containing a 2 in the results to be replaced with "Boop!"."
-Expect: (robogers("5")).toEqual(0, 1, "Boop", 3, 4, 5);
+Test: "It will replace each string that includes "2" with "Boop!"
+Expect: ("1" "2" "3" "4" "5").toEqual ("1" "Boop!" "3" "4" "5");
 
-Test: "It will convert any numbers containing a 3 in the results to be replaced with "Won't you be my neighbor?"."
-Expect: (robogers("5")).toEqual(0, 1, 2, "Won't you be my neighbor?", 4, 5);
+Test: "It will replace each string that includes "1" with "Beep!"
+Expect: ("1" "2" "3" "4" "5").toEqual ("Beep!" "2" "3" "4" "5");
+
+Test: "It will return the new string with each "character" separated by a comma and space"
+Expect: ("Beep!" "2" "3" "4" "5").toEqual (Beep!, Boop!, Won't you be my neighbor?, 4, 5,);
+
+Test: "It will return an error message if the user inputs 0"
+Expect: (0).toEqual("Enter a number above 0!");
 
 ## Technologies Used
 Visual Studio Code
 Git/Github
 HTML
 CSS Stylsheet
-Javascript Scripts
+Javascript
 
 ## Legal
 Copyright 2020 Harrison Strand
