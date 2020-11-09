@@ -12,12 +12,12 @@
 
 ## Setup
 #### View Online
-* visit: 
+* visit: https://harrisonstrand.github.io/robogers2/
 #### Open Locally
 1. Navigate to https://github.com/HarrisonStrand/robogers2.git 
 2. Click on the green 'Code' button and copy the repository HTTPS URL
 3. (a) Open your machine terminal and type in the command 'git clone 
-https://github.com/HarrisonStrand/robogers.git' in the directory you would like to clone the repository.
+https://github.com/HarrisonStrand/robogers2.git' in the directory you would like to clone the repository.
 (b) Alternatively, click 'Download Zip' and open the file on your machine
 4. Open the index.html file to view the website, or use an IDE to view the code language.
 
@@ -27,7 +27,7 @@ https://github.com/HarrisonStrand/robogers.git' in the directory you would like 
 
 #### Contact me at: _[harrisonstrand@gmailcom](harrisonstrand@gmail.com)_
 
-##Specs:
+## Specs:
 
 Description: beepBoop();
 
@@ -37,7 +37,7 @@ Expect: (5).toEqual (1, 2, 3, 4, 5,);
 Test: "It will create a new string based on the previous array"
 Expect: (1, 2, 3, 4, 5).toEqual ("12345");
 
-Test: "It will split the new string based on numbers in the array"
+Test: "It will split the new string based on index of the array"
 Expect: ("12345").toEqual ("1" "2" "3" "4" "5");
 
 Test: "It will replace each string that includes "3" with "WYBMN?"
@@ -52,15 +52,12 @@ Expect: ("1" "2" "3" "4" "5").toEqual ("Beep!" "2" "3" "4" "5");
 Test: "It will return the new string with each "character" separated by a comma and space"
 Expect: ("Beep!" "2" "3" "4" "5").toEqual (Beep!, Boop!, Won't you be my neighbor?, 4, 5,);
 
-Test: "It will return an error message if the user inputs 0"
-Expect: (0).toEqual("Enter a number above 0!");
-
 ## Technologies Used
-Visual Studio Code
-Git/Github
-HTML
-CSS Stylsheet
-Javascript
+Visual Studio Code, 
+Git/Github, 
+HTML, 
+CSS Stylsheet, 
+Javascript, 
 
 ## Legal
 Copyright 2020 Harrison Strand

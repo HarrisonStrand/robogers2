@@ -6,9 +6,9 @@ function beepBoop(number1) {
   };
   //Creates a new array with .map function using previous array//
   let newArray = numArray.map(function(number2) {
-    //creates new variable from input of .map function and turns it into a string and splits by character//
+    //creates new variable from input of .map function and turns it into a string and splits by index//
     let arrayStr = number2.toString().split("");
-    // states that if a character in the new array includes "n", that "character" will return as "Beep", "Boop", "WYBMN?"//
+    // states that if a character in the new array includes "n", that index will return as "Beep", "Boop", "WYBMN?"//
     if (arrayStr.includes("3")) {
       return "Won't you be my neighbor?";
     } else if (arrayStr.includes("2")) {
@@ -20,7 +20,7 @@ function beepBoop(number1) {
       return number2;
     };
   });
-  // this will return the new array with ", " in between each "character"//
+  // this will return the new array with ", " in between each index//
   return (newArray.join(", "));
 }
 
@@ -32,6 +32,7 @@ $(document).ready(function() {
     //creates new variable based on the beepBoop function with num1/user input as the input//
     let enterNumber = beepBoop(num1);
     $("ul#resultprint").append(enterNumber);
+    console.log(enterNumber);
   });
 });
 
