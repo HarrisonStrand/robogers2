@@ -1,0 +1,25 @@
+body {
+  background: rgb(0,135,148);
+  background: linear-gradient(275deg, rgba(0,135,148,1) 0%, rgba(182,244,250,1) 50%, rgba(94,213,224,1) 100%);
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-color: rgb(0,135,148);;
+  border-style: solid;
+  margin: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+#numberform {
+  text-align: center;
+}
+
+#resultprint {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+}

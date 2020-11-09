@@ -22,8 +22,6 @@ https://github.com/HarrisonStrand/robogers2.git' in the directory you would like
 4. Open the index.html file to view the website, or use an IDE to view the code language.
 
 #### Known Bugs
-- Could not yet get value to word replacement to function
-- User cannot yet clear entry to enter in new number
 
 #### Contact me at: _[harrisonstrand@gmailcom](harrisonstrand@gmail.com)_
 
