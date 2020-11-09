@@ -29,13 +29,15 @@ $(document).ready(function() {
     event.preventDefault();
     //creates new variable based on user form input//
     let num1 = $("input#number").val();
-    //creates new variable based on the beepBoop function with num1/user input as the input//
+    //creates new variable based on the beepBoop function with num1/user input as the argument//
     let enterNumber = beepBoop(num1);
     $("ul#resultprint").append(enterNumber);
     console.log(enterNumber);
   });
 });
 
+
+//Notes:
 /* What I figured out for my resubmission, is that you have to break everything into small pieces.
 Once I broke the problem down into smaller tests and pieces I was able to put something together.
 Originally I could not get every instance of the numbers to change, but only the first three
